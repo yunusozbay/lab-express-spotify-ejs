@@ -1,0 +1,11 @@
+<div>
+    <% albums.forEach(album => { %>
+     <h1><%= album.name %> </h1>
+       <% album.images.forEach(image => { %>
+        <img src= "<%- image.url %>" />
+       <% }) %>
+    <% }) %>
+</div>
+
+
+

@@ -1,0 +1,12 @@
+<h1>Artist search</h1>
+<form method="GET" action="/artist-search">
+  <label>
+    Search term
+    <input type="text" name="searchTerm" />
+  </label>
+  <button type="submit">Search for an Artist</button>
+</form>
+
+<% if (typeof searchTerm !== 'undefined') { %>
+<p><%- searchTerm %></p>
+<% } %>
